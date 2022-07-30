@@ -1,6 +1,8 @@
 import 'package:find_firends/ImagePaths.dart';
 import 'package:find_firends/colors.dart';
+import 'package:find_firends/home_page/home_app.dart';
 import 'package:flutter/material.dart';
+import 'page_view.dart';
 
 class BottomNavMenu extends StatefulWidget {
   BottomNavMenu({Key? key}) : super(key: key);
@@ -37,6 +39,8 @@ class _BottomNavMenuState extends State<BottomNavMenu> {
         onTap: (index) {
           setState(() {
             _selectedIndex = index;
+            HomeAppState.pageViewKey.currentState
+                ?.communicateBottomNavAndPageView(index);
           });
         },
       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_page/home_screen.dart';
+import 'home_page/home_app.dart';
 import 'colors.dart';
 
 void main() => runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             iconTheme: IconThemeData(color: ProjeRenkleri.birinciRenk),
             appBarTheme: customAppBarTheme(context)),
         debugShowCheckedModeBanner: false,
-        home: const HomeScreen());
+        home: const HomeApp());
   }
 
   AppBarTheme customAppBarTheme(BuildContext context) {
