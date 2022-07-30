@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:find_firends/colors.dart';
 import 'package:find_firends/strings.dart';
-import 'package:find_firends/ImagePaths.dart';
 import 'BottomNavMenu.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -22,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Drawer customDrawer() {
-    return Drawer(
+    return const Drawer(
       backgroundColor: Colors.white,
     );
   }
@@ -33,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
       actions: <Widget>[
         IconButton(
           onPressed: () {},
-          icon: Icon(Icons.share),
+          icon: const Icon(Icons.share),
           splashRadius: 20,
         )
       ],
