@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home_screen.dart';
 
 class CustomPageView extends StatefulWidget {
   CustomPageView({Key? key}) : super(key: key);
@@ -22,9 +23,7 @@ class CustomPageViewState extends State<CustomPageView> {
       physics: NeverScrollableScrollPhysics(),
       controller: controller,
       children: <Widget>[
-        Center(
-          child: OutlinedButton(onPressed: () {}, child: Text('Ana Sayfa')),
-        ),
+        HomeScreen(),
         Center(
           child: Text('Keşfet'),
         ),

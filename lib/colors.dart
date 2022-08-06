@@ -6,4 +6,5 @@ class ProjeRenkleri {
   static const Color ucuncuRenk = Color(0xFFACF0F2);
   static const Color dorduncuRenk = Color(0xFFF3FFE2);
   static const Color besinciRenk = Color(0xFFEB7F00);
+  static const Color beyaz = Color(0XFFFFFFFF);
 }
